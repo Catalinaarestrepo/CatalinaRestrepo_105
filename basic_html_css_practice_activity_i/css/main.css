@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    background: linear-gradient(to right, rgb(255, 192, 203, 0.5), rgba(230, 230, 250, 0.5));
+}
+
+h1, h2 {
+    font-family: 'Cherry Bomb One', cursive;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    color: #B8C0FF;
+    
+}
+
+h2 {
+    font-size: 30px;
+    color: #B8C0FF;
+}
+
+header, footer {
+    background-color: #ffe8d6;
+}
+
+header {
+    border-bottom: 5px double #B8C0FF;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 25px 20px;
+}
+
+nav ul li a {
+    color: black;
+
+}
+
+#first-line {
+    width: 500px;
+    margin: 10px auto;
+    border: none;
+    border-bottom: 5px double #B8C0FF;
+}
+
+section.card {
+    
+    width: 500px;
+    margin: 45px;
+   
+    background-color: #ffe8d6;
+    border: 10px #B8C0FF;
+    border-style: double groove;
+    border-radius: 25px;
+   
+}
+
+section.card img {
+    border-radius: 5px;
+}
+
+section.card hr {
+    margin: 20px auto;
+    border-bottom: 5px double #B8C0FF;
+}
+
+section#cats p {
+    display: inline-block;
+    width: 200px;
+    margin-right: 25px;
+}
+section#cats p:last-of-type {
+    margin-right: 0;
+}
+
+section#cats img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+section.img-sect img {
+    width: 200px;
+    float: right;
+    margin: 20px 25px;
+}
+
+
+footer {
+    border-top: 5px double #B8C0FF;
+    text-align: center;
+    padding: 23px 0;
+}
