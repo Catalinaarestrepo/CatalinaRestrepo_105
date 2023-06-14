@@ -1,0 +1,73 @@
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Cherry Bomb One', cursive;
+
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+  }
+  
+  .logo .name {
+    color: lightblue;
+    font-size: 25px;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    color:lightblue;
+    text-decoration: none;
+  }
+  
+  nav ul li:hover > a {
+    background-color: white;
+  }
+  
+  nav ul li:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: black ;
+    min-width: 200px;
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+  }
+  
+  .dropdown-menu li a {
+    color: lightblue;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: lightblue;
+  }
