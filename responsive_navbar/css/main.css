@@ -13,7 +13,7 @@ nav {
     flex-direction: column;
 
   }
-  
+
 }
   
   .logo {
@@ -87,8 +87,3 @@ main {
   padding: 20px;
 }
 
-.about img {
-  height: 70px;
-  width: 70px;
-  margin-right: 10px;
-}
