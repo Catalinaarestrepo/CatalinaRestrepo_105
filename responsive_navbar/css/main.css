@@ -7,6 +7,14 @@ nav {
     font-family: 'Cherry Bomb One', cursive;
 
   }
+
+  @media (max-width: 768px) {
+  ul.navbar {
+    flex-direction: column;
+
+  }
+  
+}
   
   .logo {
     display: flex;
@@ -71,3 +79,16 @@ nav {
   .dropdown-menu li:hover {
     background-color: lightblue;
   }
+
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about img {
+  height: 70px;
+  width: 70px;
+  margin-right: 10px;
+}
