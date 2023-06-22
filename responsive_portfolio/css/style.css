@@ -1,5 +1,5 @@
 /* Google Font API imports - found at https://fonts.google.com/ */
-@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Creepster&family=Lobster&family=Roboto:wght@400;700&family=Signika+Negative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Quicksand:wght@600&display=swap');
 
 /*****************************************************************************
   Heading, Link, and Misc. Styles
@@ -12,16 +12,12 @@ body {
     margin: 0;
 }
 
-h1,
-h2,
-h3,
-a {
-    font-family: 'Lobster', cursive;
+h1, h2, h3, a {
+    font-family: 'Dosis', sans-serif;
 }
 
-h4,
-p {
-    font-family: 'Signika Negative', sans-serif;
+h4, p {
+    font-family: 'Quicksand', sans-serif;
 }
 
 h1 {
