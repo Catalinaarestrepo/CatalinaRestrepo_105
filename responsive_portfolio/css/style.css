@@ -34,21 +34,18 @@ a {
     text-decoration: none;
 }
 
-nav,
-nav a,
-footer a {
-    color: indigo;
+nav, nav a, footer a {
+    color: #113062;
 }
 
-nav a:hover,
-footer a:hover {
+nav a:hover, footer a:hover {
     text-decoration: underline;
 }
 
 /****************************************************************************
   Grid styles
 ****************************************************************************/
-#site_grid{
+#site_grid {
     display: grid;
     grid-template-columns: 1fr 800px 1fr;
     grid-auto-rows: minmax(50px, auto);
@@ -62,29 +59,27 @@ footer a:hover {
     "footer_area footer_area footer_area";
 }
 
-nav { 
-    grid-area:nav_area;
+nav {
+    grid-area: nav_area;
 }
- #hero{
-    grid-area:hero_area;
- }
-#three_cards { 
-    grid-area: three_cards_area; 
+#hero {
+    grid-area: hero_area;
 }
-#carousel_container{
+#three_cards {
+    grid-area: three_cards_area;
+}
+#carousel_container {
     grid-area: carousel_area;
 }
-#gallery_container{
+#gallery_container {
     grid-area: gallery_area;
 }
-#two_cards{
+#two_cards {
     grid-area: two_cards_area;
 }
-
-footer{
-    grid-area:footer_area;
+footer {
+    grid-area: footer_area;
 }
-
 
 /****************************************************************************
   Nav/Footer styles
@@ -104,14 +99,12 @@ footer {
     justify-content: center;
 }
 
-#nav_links,
-.social_media {
+#nav_links, .social_media {
     display: flex;
     list-style-type: none;
 }
 
-#nav_links li,
-.social_media li {
+#nav_links li, .social_media li {
     padding: 0 4px;
 }
 
@@ -124,19 +117,15 @@ nav .social_media {
     font-size: 20px;
 }
 
-nav,
-nav a,
-footer a {
-    color: indigo;
+nav, nav a, footer a {
+    color: #113062;
 }
 
-nav a:hover,
-footer a:hover {
+nav a:hover, footer a:hover {
     text-decoration: underline;
 }
 
-nav ul,
-nav h2 {
+nav ul, nav h2 {
     flex: 1;
     margin: 0;
     padding: 0;
@@ -156,18 +145,20 @@ footer ul {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image:url("../images/abstractBackground.jpg");
+    background-image: url(../images/abstractBackground.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
-#hero h1, #hero h4{
+
+#hero h1, #hero h4 {
     color: white;
 }
-#hero a, .card a {
+
+#hero a {
     background-color: white;
-    color: indigo;
-    border: 2px solid indigo;
+    color: #113062;
+    border: 2px solid #113062;
     border-radius: 24px;
     display: inline-block;
     padding: 8px 16px;
@@ -175,32 +166,50 @@ footer ul {
     min-width: 150px;
     transition: transform 0.25s;
 }
-#hero a:hover, .card a:hover
-{
+
+#hero a:hover {
     transform: scale(1.1);
 }
+
+/****************************************************************************
+Button styles
+****************************************************************************/
+#hero a, .card a {
+    background-color: white;
+    color: #113062;
+    border: 2px solid #113062;
+    border-radius: 24px;
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 12px;
+    min-width: 150px;
+    transition: transform 0.25s;
+}
+
+#hero a:hover, .card a:hover {
+    transform: scale(1.1);
+}
+
 /****************************************************************************
   Card styles
 ****************************************************************************/
-#three_cards, #two_cards{
-    display: flex;
-}
-
-.card{
-    border: 2px solid indigo;
-    color: indigo;
+.card {
+    border: 2px solid #113062;
+    color: #113062;
     margin: 48px 24px 24px;
     padding: 12px 12px 24px;
     text-align: center;
     box-shadow: 4px 4px 8px 0px grey;
-    flex:1;
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
 
+#three_cards, #two_cards {
+    display: flex;
+}
 
-
-.card p{
+.card p {
     font-size: 18px;
     flex: 1;
     margin-top: 0px;
@@ -208,74 +217,95 @@ footer ul {
 /****************************************************************************
   Gallery styles
 ****************************************************************************/
-#gallery_container{
+#gallery_container {
     text-align: center;
 }
-#gallery_1{
+
+#gallery_1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
 #gallery_1 img {
     width: 100%;
 }
 
-#gallery_2 { 
+#gallery_2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-#gallery_2 img { 
-    height: calc(800px / 3);
-    width: calc(800px / 3);
+
+#gallery_2 img {
+    height: calc(800px/3);
+    width: calc(800px/3);
     object-fit: cover;
 }
-#gallery_3 { 
+
+#gallery_3 {
     display: flex;
     flex-wrap: wrap;
-} 
+}
 
 #gallery_3 img {
     height: 200px;
     margin: 12px;
     flex: 1 0 auto;
     object-fit: cover;
- }
- #gallery_4 { 
+}
+
+#gallery_4 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-height:1100px;
- }
+    max-height: 1100px;
+}
 
- #gallery_4 img {
+#gallery_4 img {
     width: 30%;
     margin: 12px;
-  }
+}
 
-  #gallery_5 { 
+#gallery_5 {
     columns: 3 auto;
     column-gap: 24px;
-  }
+}
 
-  #gallery_5 img { 
+#gallery_5 img {
     width: 100%;
     margin-bottom: 24px;
-  }
-  #gallery_6{
-    columns: 3 auto;
-  }
-  #gallery_6 img{
-    width: 100%;
-    margin-bottom: 24px;
-  }
+}
 
+#gallery_6 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 75px;
+}
 
+#gallery_6 img {
+    height: 200px;
+    margin: 12px;
+    flex: 1 0 auto;
+    object-fit: contain;
+}
+
+/****************************************************************************
+Carousel Container
+****************************************************************************/
+
+.carousel-item {
+    padding-top: 75px;
+    height: 500px;
+}
+
+.carousel-item img {
+    object-fit: contain;
+    height: 100%;
+}
 /****************************************************************************
   Media Query - Mobile Breakpoint
 ****************************************************************************/
-
-
 @media screen and (max-width: 800px) {
-    #site_grid{
+    #site_grid {
         grid-template-columns: 1fr;
         grid-template-areas:
         "nav_area"
@@ -285,31 +315,38 @@ footer ul {
         "gallery_area"
         "two_cards_area"
         "footer_area";
-        flex-direction:column;
     }
-    .card{
+    nav {
+        flex-direction: column;
+    }
+
+    #three_cards, #two_cards {
+        flex-direction: column;
+    }
+
+    .card {
         align-items: center;
         margin: 36px 24px 0px;
     }
-    #three_cards,#two_cards{
-        flex-direction: column;
-    }
-    #gallery_1,
-    #gallery_2 {
+
+    #gallery_1, #gallery_2 {
         grid-template-columns: 1fr;
     }
-    #gallery_2{
+
+    #gallery_2 img {
         width: 100%;
         height: auto;
     }
-    #gallery_4{
+
+    #gallery_4 {
         max-height: 1900px;
     }
-    #gallery_4 img{
+
+    #gallery_4 img {
         width: 45%;
     }
-    #gallery_5{
+
+    #gallery_5 {
         columns: 2 auto;
     }
-    
 }
