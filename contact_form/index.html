@@ -12,7 +12,14 @@
               <h1>Contact Form</h1>
               <h4>Got a question? We'd love to hear from you. Send us a message, and we'll respond as soon as possible.</h4>
             </header>
-        
+            <label for="department">How can we help you with?:</label>
+            <select id="department" name="department">
+              <option value="sales">Sales</option>
+              <option value="support">Support</option>
+              <option value="general">General Inquiry</option>
+            </select>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
             <form action="https://getform.io/f/{your-form-endpoint}" method="POST">
               <label for="name">Name:</label>
               <input type="text" id="name" name="name" required>
@@ -26,12 +33,7 @@
               <label for="message">Message:</label>
               <textarea id="message" name="message" required></textarea>
         
-              <label for="department">Department:</label>
-              <select id="department" name="department">
-                <option value="sales">Sales</option>
-                <option value="support">Support</option>
-                <option value="general">General Inquiry</option>
-              </select>
+           
         
               <input type="submit" value="Submit">
             </form>
